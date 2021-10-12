@@ -1,0 +1,67 @@
+$메인컬러 : #000000;
+
+@mixin 버튼(){
+    border-radius: 5px;
+    padding: 15px;
+    background:$메인컬러;
+    color: #FFFFFF;
+    display: inline;
+}
+
+
+body {
+    margin: 0;
+}
+div {
+    box-sizing: border-box;
+}
+
+.title {
+    background: black;
+    width: 100%;
+    display: flex;
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+
+    p {
+        color: #FFFFFF;
+    }
+    .change{
+        margin: auto;
+        @include 버튼()
+    }
+}
+
+.list {
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    button {
+        @include 버튼()
+    }
+}
+
+.todo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    input{
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 80%;
+        border: 1px solid grey;
+    }
+    button {
+        @include 버튼()
+    }
+}
+
+
