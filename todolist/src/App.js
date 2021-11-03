@@ -7,7 +7,7 @@ function App() {
 
   //변수 사용
   let title = 'To Do List';
-  
+  let test = 'test';
 
   // state 문법 사용
   let [글제목,글제목변경] = useState(['']);
